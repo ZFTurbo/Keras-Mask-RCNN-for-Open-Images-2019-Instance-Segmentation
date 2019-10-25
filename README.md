@@ -1,6 +1,6 @@
 ## Keras Mask R-CNN for Open Images Challenge 2019: Instance Segmentation
 
-Repository contains Mask R-CNN models which were trained on Kaggle competition data: 
+Repository contains Mask R-CNN models which were trained on Open Images Dataset during Kaggle competition: 
 https://www.kaggle.com/c/open-images-2019-instance-segmentation/leaderboard 
 
 Repository contains the following:
@@ -10,11 +10,11 @@ Repository contains the following:
 
 ## Requirements
 
-Python 3.\*, Keras 2.\*, [keras-maskrcnn 0.2.2](https://github.com/fizyr/keras-maskrcnn)
+Python 3.\*, Keras 2.\*, [keras-maskrcnn 0.2.2](https://github.com/fizyr/keras-maskrcnn), cv2, numpy, pandas
 
 ## Pretrained models
 
-There are 3 Mask R-CNN models based on ResNet50, ResNet101 and ResNet152 for [300 classes](). 
+There are 3 Mask R-CNN models based on ResNet50, ResNet101 and ResNet152 for [300 classes](https://github.com/ZFTurbo/Keras-Mask-RCNN-for-Open-Images-2019-Instance-Segmentation/blob/master/data_segmentation/challenge-2019-classes-description-segmentable.csv). 
 
 | Backbone | Image Size (px) | Model | Small validation mAP | LB (Public) |
 | --- | --- | --- | --- | --- | 
@@ -26,3 +26,12 @@ There are 3 Mask R-CNN models based on ResNet50, ResNet101 and ResNet152 for [30
 
 ## Inference 
 
+Simple example can be found here: [inference_example.py](https://github.com/ZFTurbo/Keras-Mask-RCNN-for-Open-Images-2019-Instance-Segmentation/blob/master/inference_example.py)
+
+## Training
+
+For training you need to download OID dataset (~500 GB images): https://storage.googleapis.com/openimages/web/download.html
+You need all images, all masks and all CSV-files related to Instance Segmentation track. 
+
+Then run script (change parameters and file locations at the bottom of script):
+* [training/train_maskrcnn.py]()
