@@ -36,4 +36,4 @@ For training you need to download OID dataset (~500 GB images): https://storage.
 You need all images, all masks and all CSV-files related to Instance Segmentation track. 
 
 Then run script (change parameters and file locations at the bottom of script):
-* [training/train_maskrcnn.py]()
+* [training/train_maskrcnn.py](https://github.com/ZFTurbo/Keras-Mask-RCNN-for-Open-Images-2019-Instance-Segmentation/blob/master/training/train_maskrcnn.py)
