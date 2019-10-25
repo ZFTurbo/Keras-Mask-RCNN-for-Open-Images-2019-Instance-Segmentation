@@ -28,6 +28,8 @@ There are 3 Mask R-CNN models based on ResNet50, ResNet101 and ResNet152 for [30
 
 Simple example can be found here: [inference_example.py](https://github.com/ZFTurbo/Keras-Mask-RCNN-for-Open-Images-2019-Instance-Segmentation/blob/master/inference_example.py)
 
+![Example of predictions](https://github.com/ZFTurbo/Keras-Mask-RCNN-for-Open-Images-2019-Instance-Segmentation/blob/master/img/mask_rcnn_prediction_example.jpg)
+
 ## Training
 
 For training you need to download OID dataset (~500 GB images): https://storage.googleapis.com/openimages/web/download.html
