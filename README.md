@@ -6,7 +6,7 @@ https://www.kaggle.com/c/open-images-2019-instance-segmentation/leaderboard
 Repository contains the following:
 * Pre-trained Mask R-CNN models (ResNet50, ResNet101 and ResNet152 backbones)
 * Example code to get predictions with these models for any set of images
-* Code to train your own classifier based on Keras Mask R-CNN and OID dataset 
+* Code to train model based on Keras Mask R-CNN and OID dataset 
 
 ## Requirements
 
