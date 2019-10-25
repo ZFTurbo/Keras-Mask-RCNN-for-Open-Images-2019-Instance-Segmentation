@@ -80,7 +80,7 @@ def show_image_debug(draw, boxes, scores, labels, masks, classes):
         if score < limit_conf:
             break
 
-        color = (0, 255, 0)
+        color = label_color(label)
         color_mask = (255, 0, 0)
 
         b = box.astype(int)
@@ -90,9 +90,11 @@ def show_image_debug(draw, boxes, scores, labels, masks, classes):
         draw_mask(draw, b, mask, color=color_mask)
 
         caption = "{} {:.3f}".format(classes[label], score)
+        print(caption)
         draw_caption(draw, b, caption)
     draw = cv2.cvtColor(draw, cv2.COLOR_RGB2BGR)
     show_image(draw)
+    # cv2.imwrite('debug.png', draw)
 
 
 def get_maskrcnn_single_predictions(model, input_image, classes, show_debug_images):
